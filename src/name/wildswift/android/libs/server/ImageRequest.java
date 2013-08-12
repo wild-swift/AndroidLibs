@@ -20,7 +20,7 @@ package name.wildswift.android.libs.server;
 import android.content.Context;
 import android.graphics.drawable.BitmapDrawable;
 import name.wildswift.android.libs.exceptions.ServerApiException;
-import name.wildswift.android.libs.system.log.ApplicationUtils;
+import name.wildswift.android.libs.ApplicationUtils;
 
 import java.io.IOException;
 import java.io.InputStream;

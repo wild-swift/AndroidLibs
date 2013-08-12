@@ -1,6 +1,6 @@
 package name.wildswift.android.libs.utils;
 
-import name.wildswift.android.libs.system.log.ApplicationUtils;
+import name.wildswift.android.libs.ApplicationUtils;
 
 import java.util.logging.Logger;
 

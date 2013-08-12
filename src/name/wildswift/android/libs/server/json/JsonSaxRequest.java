@@ -21,7 +21,7 @@ import name.wildswift.android.libs.exceptions.ServerApiException;
 import name.wildswift.android.libs.server.ServerRequest;
 import name.wildswift.android.libs.json.parser.JSONParser;
 import name.wildswift.android.libs.json.parser.ParseException;
-import name.wildswift.android.libs.system.log.ApplicationUtils;
+import name.wildswift.android.libs.ApplicationUtils;
 
 import java.io.IOException;
 import java.io.InputStream;

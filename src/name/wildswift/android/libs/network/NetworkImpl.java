@@ -3,7 +3,7 @@ package name.wildswift.android.libs.network;
 import name.wildswift.android.libs.exceptions.InvalidStatusException;
 import name.wildswift.android.libs.exceptions.NetworkException;
 import name.wildswift.android.libs.exceptions.TransportException;
-import name.wildswift.android.libs.system.log.ApplicationUtils;
+import name.wildswift.android.libs.ApplicationUtils;
 
 import java.io.*;
 import java.net.HttpURLConnection;
@@ -16,11 +16,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Arello Mobile
- * Mobile Framework
- * Except where otherwise noted, this work is licensed under a Creative Commons Attribution 3.0 Unported License
- * http://creativecommons.org/licenses/by/3.0
- *
  * Implementation fo interface {@link  Network}.<br/>
  * Should call {@link  NetworkImpl#getInputForRequest(String, java.util.Map, int, java.util.Date, java.lang.String, java.lang.String)} or {@link  NetworkImpl#openConnection(String, java.util.Map, int, java.util.Date, java.lang.String, java.lang.String)} with {@link NetworkImpl#close()} in one synchronized block.<br/>
  * Sample. <br/>
