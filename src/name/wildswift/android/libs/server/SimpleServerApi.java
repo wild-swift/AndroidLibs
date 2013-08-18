@@ -17,10 +17,9 @@
  */
 package name.wildswift.android.libs.server;
 
-import android.app.Service;
-import name.wildswift.android.libs.network.Network;
+import name.wildswift.android.libs.server.network.Network;
 import name.wildswift.android.libs.exceptions.NetworkException;
-import name.wildswift.android.libs.network.NetworkPool;
+import name.wildswift.android.libs.server.network.NetworkPool;
 import name.wildswift.android.libs.exceptions.ServerApiException;
 
 import java.io.*;
@@ -35,7 +34,7 @@ import java.util.logging.Logger;
  *
  * @author Wild Swift
  */
-public abstract class SimpleServerApi extends Service {
+public abstract class SimpleServerApi {
 
 	
 	/**
@@ -68,8 +67,7 @@ public abstract class SimpleServerApi extends Service {
 	 * @throws IllegalStateException if cache not initialized
 	 */
 	@SuppressWarnings({"SynchronizationOnLocalVariableOrMethodParameter"})
-	protected final <T> T processRequest(ServerRequest<T> request, InputFilter filter, boolean useCache) throws NetworkException, ServerApiException {
-		if (cache == null) throw new IllegalStateException("Cache is not specified");
+	protected final <T> T processRequest(ServerRequest<T> request, InputFilter filter, boolean useCache) throws ServerApiException {
 		final Network network = networkPool.getNetwork();
 		InputStream inputToProcess = null;
 		synchronized (network) {

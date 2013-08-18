@@ -17,7 +17,7 @@
  */
 package name.wildswift.android.libs.server;
 
-import name.wildswift.android.libs.network.Network;
+import name.wildswift.android.libs.server.network.Network;
 import name.wildswift.android.libs.exceptions.ServerApiException;
 
 import java.io.IOException;

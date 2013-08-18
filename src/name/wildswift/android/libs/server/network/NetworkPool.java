@@ -1,4 +1,4 @@
-package name.wildswift.android.libs.network;
+package name.wildswift.android.libs.server.network;
 
 import java.util.Vector;
 
